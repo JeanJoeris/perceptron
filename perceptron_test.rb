@@ -16,7 +16,7 @@ class PerceptronTest < Minitest::Test
 
     perceptron.set_weights(conditions_with_weights)
 
-    assert_equal conditions_and_weights, perceptron.weights
+    assert_equal conditions_with_weights, perceptron.weights
   end
 
   def test_perceptron_will_correctly_evaluate
